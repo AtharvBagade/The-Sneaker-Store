@@ -1,38 +1,704 @@
-.App {
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Hina Mincho;
+}
+
+html
+{
+   scroll-behavior: smooth;
+}
+
+/*Navbar styling*/
+
+.navbar-contain
+{
+  height: 18vw;
+  background-color: #15171D;
+}
+
+.navbar1
+{
+  display: flex;
+  padding-left: 3vw;
+  padding-right: 1.5vw;
+  align-items:baseline;
+  justify-content: space-between;
+  color: #fff;
+}
+
+
+.logo
+{
+  font-size: 4.6vw;
+  font-weight: 400;
+  font-family: Hina Mincho;
+}
+
+#color
+{
+  color: #D35E5F;
+}
+
+ul
+{
+  display: flex;
+  padding-left: 4vw;
+}
+
+.categories  li 
+{
+  list-style: none;
+  padding: 2vh 1vw;
+  font-size: 2vw;
+  margin: 1vw;
+}
+
+.cart-options li
+{
+  list-style: none;
+  margin: 0.2vw;
+  padding: 10px;
+  font-size: 2vw;
+  border-radius: 10px;
+}
+
+.cart-options li:hover, .categories:hover li:hover
+{
+  background-color: #D35E5F;
+  color: #fff;
+}
+
+.mobile-navbar
+{
+  display: none;
+}
+
+.navbar2
+{
+  height: 6vh;
+  font-size: 2.2vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar2 i 
+{
+  padding-right: 1vw;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"]
+{
+  width: 50%;
+  height:4vw;
+  padding-left: 1vw;
+  margin-top: 2vw;
+  font-size: 2vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Image Slider Styling*/
+
+.slider-contain
+{
+  height: 85vw;
+  border: 1px solid;
+  padding: 5vw;
+}
+
+.slider 
+{
+  height: 65vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition:  animate;
+}
+
+.slider-content
+{
+  height: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.slider-content button
+{
+    outline: none;
+    border: none;
+    background: transparent;
+    color:#D35E5F;
+    font-size: 1.5rem;
+}
+
+.slider-feature
+{
+ font-size: 3vw;
+ transition: animate;
+}
+
+.animate
+{
+  transition: 0.7s ease-in-out;
+}
+
+/*Introduction styling*/
+
+.Intro-contain
+{
+  height: 30vw;
+  background-color: #15171D;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.heading-1
+{
+  font-size: 5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sub-heading-1 , .sub-heading-2
+{
+  font-size: 3vw;
+  margin-top: 3vw;
+}
+
+/* Deals styling */
+
+.deals-contain
+{
+  height: 60vw;
+  background-color: #15171D;
+  color: #fff;
+}
+
+.deals-contain p 
+{
+  padding: 5vw 3vw;
+  font-size: 2.6vw;
+}
+
+.img-contain
+{
+  display: flex;
+  padding-right: 1vw;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+.img-contain::-webkit-scrollbar
+{
+  display: none;
+}
+
+
+/*Card Styling*/
+
+.card-contain
+{
+  height: 34vw;
+  width: 25vw;
+  margin-left: 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+
+img
+{
+  margin: 2vw 2.5vw 1vw 2.5vw;
+  height: 20vw;
+  border-radius: 1rem;
+}
+
+.card-head
+{
+  color: #15171D;
+  font-size: 3vw;
+  margin: 0vw 2.5vw ;
+}
+
+.card-subhead
+{
+  color: #15171D;
+  margin: 0vw 2.5vw ;
+  font-size: 2.5vw;
+}
+
+/*Categories styling */
+
+.categories-contain
+{
+  height: 150vw;
+  padding: 2vw;
+}
+
+.categories-contain p 
+{
+  font-size: 3.5vw;
+}
+
+.card-contain2
+{
+  display: flexbox;
+  flex-wrap: wrap;
+  padding: 4vw;
+}
+
+.card2 
+{
+  float: left;
+  height: 40vw;
+  width: 40vw;
+  margin-left: 2vw;
+  margin-top: 3vw;
+}
+
+.card2 img
+{
+  height: 30vw;
+  padding-left:2vw;
+}
+
+.head 
+{
+  font-size: 2.3vw;
+  margin-left: 4vw;
+}
+
+/*Footer styling*/
+.footer-contain li 
+{
+  list-style-type: none;
+  font-size: 1.9vw;
+}
+
+.footer-contain
+{
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 30vw;
+  padding-top: 2vw;
+  background-color: #15171D;
+  color: #fff;
+}
+
+.links 
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contain #color
+{
+  font-size: 2.5vw;
+}
+
+.footer-contain ul 
+{
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 0;
+}
+
+/*Styling for devices width screen width smaller than 600px*/
+
+@media (max-width:600px) {
+  
+.navbar-contain
+{
+  padding-top: 2vw;
+  min-height: 25vw;
+}
+
+.logo
+{
+  font-size: 8vw;
+}
+
+.navbar-contain ul
+{
+  display: none;
+}
+
+.mobile-navbar
+{
+  display: block;
+  padding-right: 3vw;
+}
+
+.mobile 
+{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  font-size: 2rem;
+  z-index: 1;
+  background-color: #D35E5F;
+  transform: translateX(-200rem);
+}
+
+.mobile section 
+{
+  display: flex;
+  padding: 2vw;
+  justify-content: space-between;
+}
+
+.mobile button 
+{
+  width: 8vw;
+  font-size: 5vw;
+  color: #fff;
+  background: transparent;
+  outline: none;
+  border: none;
+ 
+}
+
+.mobile .fa-shopping-cart, .mobile .fa-user-circle
+{
+  padding: 4vw 3vw;
+}
+
+.mobile ol 
+{
+  padding-top: 5rem;
+  text-align: center;
+ font-size: 8vw;
+}
+
+.mobile li 
+{
+  padding: 4vw;
+}
+
+
+input[type="text"]
+{
+  height: 5vw;
+  margin-top: 3.5vw;
+  font-size: 2.5vw;
+}
+
+.slider-feature
+{
+  font-size: 5vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.heading-1
+{
+  font-size: 8vw;
+}
+
+.sub-heading-2,.sub-heading-1
+{
+  font-size: 5vw;
+}
+
+.slider-contain
+{
+  height: 100vw;
+}
+
+.slider
+{
+  height: 75vw;
+  background-position: center center;
+}
+
+.Intro-contain
+{
+  height: 60vw;
+}
+
+.deals-contain
+{
+  height: 80vw;
+}
+
+.deals-contain p 
+{
+  font-size: 5vw;
+}
+
+.card-contain
+{
+  height: 50vw;
+  width: 40vw;
+  margin-bottom: 3vw;
+}
+
+.card-contain img 
+{
+  height: 30vw;
+}
+
+.card-head
+{
+  font-size: 5vw;
+}
+
+.card-subhead
+{
+  font-size: 4vw;
+  letter-spacing: 1px;
+}
+
+.categories-contain p
+{
+  font-size: 6vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.categories-contain
+{
+  padding-left: 4vw;
+  padding-right: 6vw;
+  height: fit-content;
+}
+
+.card-contain2
+{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card2
+{
+  height:55vw;
+  margin-top: 8vw;
+}
+
+.card2 img
+{
+  height: 40vw;
+  padding: 0;
+  margin: 0;
+}
+
+.head
+{
+  font-size: 4.4vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.links  , .contact  , .categories-links 
+{
+  padding: 4vw;
+}
+
+.links ul , .contact ul , .categories-links ul 
+{
+  display: flexbox;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 2vw;
+}
+.links li , .contact li , .categories-links li 
+{
+  border-right: #fff 1px solid;
+  width: max-content;
+  padding: 0 2vw 0 3vw;
+  margin-top: 2vw;
+  font-size: 3.8vw;
+}
+
+.footer-contain #color 
+{
+  font-size: 5vw;
+}
+
+.footer-contain
+{
+  flex-direction: column;
+}
+
+}
+
+@media (min-width:950px) {
+
+  .mobile
+  {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-contain
+  {
+    height: 17vh;
   }
+
+  .logo
+  {
+    font-size: 3rem;
+  }
+
+  .categories li 
+  {
+    font-size: 1.2rem;
+  }
+
+  .cart-options li 
+  {
+    font-size: 1.4rem;
+  }
+
+  .navbar2 i
+  {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"]
+  {
+    height: 2rem;
+    margin-top: .3rem;
+    width: 40rem;
+    font-size: 1.3rem;
+  }
+  
+  .slider-contain
+  {
+    height: 85vh;
+    padding: 3vw;
+  }
+  
+  .slider
+  {
+    height: 40rem;
+    margin: 0vw 4vw;
+    background-position: center center;
+  }
+
+  .slider-feature
+  {
+    font-size: 2rem;
+  }
+
+  .Intro-contain
+  {
+    padding: 2rem;
+    height: 30vh;
+  }
+
+  .heading-1
+  {
+    font-size: 3rem;
+  }
+
+  .sub-heading-1
+  {
+    font-size: 2rem;
+  }
+
+  .sub-heading-2
+  {
+    font-size: 2rem;
+  }
+
+  .deals-contain
+  {
+    height: 78vh;
+  }
+
+  .card-contain
+  {
+    height: 25rem;
+    width: 20rem;
+  }
+
+
+  .card-contain img 
+  {
+    margin: 0;
+    border-radius: 0;
+    height: 18rem;
+  }
+
+  .card-head
+  {
+    font-size: 2rem;
+  }
+
+  .card-subhead
+  {
+    font-size: 2rem;
+  }
+
+  .categories-contain p 
+  {
+    font-size: 3rem;
+  }
+
+  .card-contain2
+  { 
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .card2
+  {
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .card2 img 
+  {
+    height: 20rem;
+    margin: 0;
+  }
+
+  .head 
+  {
+    margin-left: 1.8vw;
+    font-size: 1.7rem;
+  }
+
+  .categories-contain 
+  {
+    height: fit-content;
+  }
+
+  .footer-contain #color 
+  {
+    font-size: 1.5rem;
+    height: fit-content;
+  }
+
+  .links li , .contact li , .categories-links li 
+  {
+    font-size: 1.2rem;
+  }
+
+
+}
+
+@media (min-width:1200px) {
+
+  .slider-contain
+  {
+    padding: 2vw;
+    text-align: center;
+  }
+
+  .slider
+  {
+    background-size: contain;
+    height: 72vh;
+  }
+  
 }
